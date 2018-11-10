@@ -5,13 +5,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Spring Web MVC</title>
+<title>Add</title>
 </head>
 <body>
-    <h1>Hello!</h1>
+    <h1>입력!</h1>
     <pre>
-        http://localhost:8888/json/hello2
-        hello2.jsp 파일
+        http://localhost:8888/mvc/board/add
+        add.jsp
     </pre>
 </body>
 </html>

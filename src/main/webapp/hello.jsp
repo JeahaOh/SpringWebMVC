@@ -9,6 +9,9 @@
 </head>
 <body>
     <h1>Hello!</h1>
-    http://localhost:8888/mvc/hello2
+    <pre>
+        http://localhost:8888/mvc/hello
+        hello.jsp 파일
+    </pre>
 </body>
 </html>

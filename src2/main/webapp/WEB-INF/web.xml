@@ -5,34 +5,14 @@
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
   version="4.0"
   metadata-complete="false">
+    <!-- matadata-complete 값이 true이면 web.xml 파일에 등록된 정보만 유효하다.
+         @WebServlet, @WebFilter 처럼 애노테이션으로도 지정할 수 있으려면,
+         false 값으로 설정해야 한다. -->
     
     <description>웹 애플리케이션에 대한 설명을 적는 태그이다.</description>
     
     <display-name>spring-webmvc</display-name>
-    
-<!-- 프론트 컨트롤러들이 공통으로 사용할 객체를 관리해주는 리스너 등록 
-     => SevletContextListener의 구현체이다.
-     => 즉 웹 애플리케이션이 시작되거나 종료될 때 실행되는 클래스이다. 
--->
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
-    
-    
-<!-- ContextLoaderListener의 IoC 컨트롤러를 위한 설정 파일 지정 -->
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>/WEB-INF/app-context.xml</param-value>
-    </context-param>
-    
-    
-<!--
-    step 01.
-        servlet을 잡아주면 servlet-mapping도 잡아줘야 한다.
-    step 02.
-        "[root]/[url-pattern값]/Controller RequestMapping에서 명시한 값"
-            이 주소가 된다.
--->
+
     <servlet>
         <servlet-name>mvc</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>

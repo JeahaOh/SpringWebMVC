@@ -1,13 +1,13 @@
-package bitcamp.mvc.web.json;
+package bitcamp.mvc.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller("web.json.HelloController")
+@Controller
 public class HelloController {
   
-  @RequestMapping("/hello2")
+  @RequestMapping("/hello")
   public String hello() {
-    return "/hello2.jsp";
+    return "/hello.jsp";
   }
 }

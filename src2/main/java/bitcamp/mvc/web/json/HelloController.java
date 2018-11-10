@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller("web.json.HelloController")
 public class HelloController {
   
-  @RequestMapping("/hello2")
+  @RequestMapping("/hello")
   public String hello() {
     return "/hello2.jsp";
   }
