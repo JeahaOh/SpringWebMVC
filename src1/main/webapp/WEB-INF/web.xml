@@ -23,6 +23,8 @@
         <url-pattern>/mvc/*</url-pattern>
     </servlet-mapping>
     
+    <!-- servlet을 잡아주면 servlet-mapping도 잡아줘야 한다. -->
+    
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.xhtml</welcome-file>
