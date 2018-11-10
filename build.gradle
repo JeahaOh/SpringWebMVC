@@ -10,8 +10,19 @@ tasks.withType(JavaCompile) {
     targetCompatibility = '1.8'
 }
 
-dependencies {
+eclipse {
+    wtp {
+        facet {
+            facet name: 'jst.web', version: '3.1'
+        }
+    }
+}
 
+dependencies {
+    // Spring IoC 컨테이너 라이브러리
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '5.0.6.RELEASE'
+    providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+    
     //  default dependencies
     compile 'com.google.guava:guava:23.0'
     testCompile 'junit:junit:4.12'
