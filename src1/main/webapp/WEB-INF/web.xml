@@ -23,16 +23,6 @@
         <url-pattern>/mvc/*</url-pattern>
     </servlet-mapping>
     
-    <servlet>
-        <servlet-name>json</servlet-name>
-        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>json</servlet-name>
-        <url-pattern>/json/*</url-pattern>
-    </servlet-mapping>
-    
     <!-- servlet을 잡아주면 servlet-mapping도 잡아줘야 한다. -->
     
     <welcome-file-list>

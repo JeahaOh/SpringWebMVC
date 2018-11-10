@@ -9,6 +9,6 @@
 </head>
 <body>
     <h1>Hello!</h1>
-    http://localhost:8888/mvc/hello2
+    http://localhost:8888/mvc/hello
 </body>
 </html>
