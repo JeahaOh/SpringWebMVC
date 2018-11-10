@@ -1,0 +1,15 @@
+.gradle/
+.settings/
+bin/
+build/
+.classpath
+.project
+.DS_store
+
+.mp4
+.jepg
+.jpg
+.png
+
+.properties
+**/*.properties
