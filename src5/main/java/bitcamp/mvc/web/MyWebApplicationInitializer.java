@@ -1,11 +1,10 @@
-//  자바로 프론트 컨트롤러 등록하기
 package bitcamp.mvc.web;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration.Dynamic;
 import org.springframework.web.WebApplicationInitializer;
-import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import org.springframework.web.context.support.XmlWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
 public class MyWebApplicationInitializer implements WebApplicationInitializer {
@@ -25,10 +24,8 @@ public class MyWebApplicationInitializer implements WebApplicationInitializer {
     
     //  여기에서 FrontController를 등록할 것임.
     //  1) FrontController가 사용할 Spring IoC Container를 만듦.
-    AnnotationConfigWebApplicationContext iocContainer =
-        new AnnotationConfigWebApplicationContext();
-    iocContainer.register(AppConfig.class);
-    iocContainer.refresh();
+    XmlWebApplicationContext iocContainer = new XmlWebApplicationContext();
+    iocContainer.setConfigLocation("/WEB-INF/spring/mvc-servlet.xml");
     
     //  2) FrontController를 만든다.
     DispatcherServlet mvcDispatcher = new DispatcherServlet(iocContainer);
