@@ -1,5 +1,5 @@
 //  RequestHandler의 parameter - custom property editor 등록하기 II
-//  http://localhost:8888/mvc/exam05_5/m1?title=asdf&content=1q2w3e4r&createdDate=2018-11-02
+//  http://localhost:8888/mvc/exam05_05/m1?title=asdf&content=1q2w3e4r&createdDate=2018-11-02
 
 package bitcamp.mvc.web.exam05;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("/exam05_5")
-public class Exam05_5 {
+@RequestMapping("/exam05_05")
+public class Exam05_05 {
   @GetMapping("m1")
   @ResponseBody
   public String m1(String title, String content, Date createdDate) {

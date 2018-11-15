@@ -1,9 +1,9 @@
 //  RequestHandler의 parameter - Client가 보낸 data 받기
-//  http://localhost:8888/mvc/exam05_2/m1?name=JEJE&age=21
-//  http://localhost:8888/mvc/exam05_2/m2?name=EKEK&age=20
-//  http://localhost:8888/mvc/exam05_2/m3?name=JEJE&age=22
-//  http://localhost:8888/mvc/exam05_2/m4?age=20
-//  http://localhost:8888/mvc/exam05_2/m5?name=EKEK
+//  http://localhost:8888/mvc/exam05_02/m1?name=JEJE&age=21
+//  http://localhost:8888/mvc/exam05_02/m2?name=EKEK&age=20
+//  http://localhost:8888/mvc/exam05_02/m3?name=JEJE&age=22
+//  http://localhost:8888/mvc/exam05_02/m4?age=20
+//  http://localhost:8888/mvc/exam05_02/m5?name=EKEK
 
 package bitcamp.mvc.web.exam05;
 
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("/exam05_2")
-public class Exam05_2 {
+@RequestMapping("/exam05_02")
+public class Exam05_02 {
   
   //    FrontController로 부터 클라이언트가 보낸 값을 parameter로 바로 받을 수 있다.
   //    => parameter 변수에 @RequestParam annotation을 붙이면 된다.

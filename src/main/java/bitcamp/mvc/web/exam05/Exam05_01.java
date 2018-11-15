@@ -1,5 +1,5 @@
 //  RequestHandler의 parameter - 파라미터로 받을 수 있는 객체
-//  http://localhost:8888/mvc/exam05_1/m1 ,2, 3
+//  http://localhost:8888/mvc/exam05_01/m1 ,2, 3
 
 package bitcamp.mvc.web.exam05;
 
@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("/exam05_1")
-public class Exam05_1 {
+@RequestMapping("/exam05_01")
+public class Exam05_01 {
   
   //    FrontController로 부터 ServletRequest와 ServletResponse 객체를 받을 수 있다.
   //    -> 그냥 해당 타입의 파라미터를 선언만 하면 된다.

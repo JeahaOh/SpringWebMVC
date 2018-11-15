@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("/exam05_8")
-public class Exam05_8 {
+@RequestMapping("/exam05_08")
+public class Exam05_08 {
   
   /*    @Cookie annotation을 이용하여 client가 보낸 cookie 값을
         FrontController로 부터 받을 수 있다.
         
-        http://localhost:8888/mvc/exam05_8/m1
-        http://localhost:8888/mvc/exam05_8/m2
+        http://localhost:8888/mvc/exam05_08/m1
+        http://localhost:8888/mvc/exam05_08/m2
   */
   @GetMapping(value="m1", produces="text/plain;charset=UTF-8")
   @ResponseBody

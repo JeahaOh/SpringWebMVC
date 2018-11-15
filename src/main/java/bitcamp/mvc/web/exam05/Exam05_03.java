@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import bitcamp.mvc.vo.Board;
 
 @Controller
-@RequestMapping("/exam05_3")
-public class Exam05_3 {
+@RequestMapping("/exam05_03")
+public class Exam05_03 {
   
   //    FrontController로부터 Client가 보낸 값들을 객체에 담아서 받을 수 있다.
-  //    http://localhost:8888/mvc/exam05_3/m1?no=11&title=aaaa&content=bbbb
+  //    http://localhost:8888/mvc/exam05_03/m1?no=11&title=aaaa&content=bbbb
   @GetMapping(value="m1")
   @ResponseBody
   public String m1 (Board board) {
@@ -24,7 +24,7 @@ public class Exam05_3 {
   }
   
   //    object로 받을 수 있는 것은 받고, 낱개로고 받을 수 있다.
-  //    http://localhost:8888/mvc/exam05_3/m2?no=11&title=aaaa&content=bbbb&writer=hongkildong
+  //    http://localhost:8888/mvc/exam05_03/m2?no=11&title=aaaa&content=bbbb&writer=hongkildong
   @GetMapping(value="m2")
   @ResponseBody
   public String m2 (Board board, String writer) {
@@ -36,7 +36,7 @@ public class Exam05_3 {
   }
   
   //    객체 안에 있는 객체 프로퍼티 값 설정하기.
-  //    http://localhost:8888/mvc/exam05_3/m3?no=11&title=aaaa&content=bbbb&user.id=hong&user.email=hong@test.com&user.password=1111
+  //    http://localhost:8888/mvc/exam05_03/m3?no=11&title=aaaa&content=bbbb&user.id=hong&user.email=hong@test.com&user.password=1111
   @GetMapping(value="m3")
   @ResponseBody
   public String m3 (Board board) {

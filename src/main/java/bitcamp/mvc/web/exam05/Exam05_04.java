@@ -14,13 +14,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import bitcamp.mvc.vo.Member;
 
 @Controller
-@RequestMapping("/exam05_4")
-public class Exam05_4 {
+@RequestMapping("/exam05_04")
+public class Exam05_04 {
   
   //    FrontController가 PageController를 호출할 때 기본적으로
   //    클라이언트가 보낸 문자열 데이터를 primitive type의 값으로 변환시켜준다.
   //    그 외의 타입에 대해서는 개발자가 property editor(프로퍼티 값 변환기)를 등록해야 한다.
-  //    http://localhost:8888/mvc/exam05_4/m1?title=aaa&content=bbb&createdDate=2018-06-04
+  //    http://localhost:8888/mvc/exam05_04/m1?title=aaa&content=bbb&createdDate=2018-06-04
   @GetMapping("m1")
   @ResponseBody
   public String m1(String title, String content, Date createdDate) {
@@ -30,7 +30,7 @@ public class Exam05_4 {
   
   //    문자열로 넘어온 값을 custom property editor를 통해 Member 객체로 받을 수 있다.
   //    단, parameter 타입 앞에 @RequestParam을 반드시 붙여야 한다.
-  //    http://localhost:8888/mvc/exam05_4/m2?member=hong,hong@test.com,11111
+  //    http://localhost:8888/mvc/exam05_04/m2?member=hong,hong@test.com,11111
   @GetMapping("m2")
   @ResponseBody
   public String m2(@RequestParam Member member) {

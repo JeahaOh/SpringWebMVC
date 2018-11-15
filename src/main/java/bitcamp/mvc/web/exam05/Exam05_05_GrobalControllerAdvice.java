@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.InitBinder;
 //  => 다음 annotation을 붙이면 FrontController는 PageController를 실행하기 전에
 //     먼저 이 클래스를 살펴볼 것이다.
 @ControllerAdvice
-public class Exam05_5_GrobalControllerAdvice {
+public class Exam05_05_GrobalControllerAdvice {
   
   @InitBinder
   public void initBinder(WebDataBinder binder) {
-    System.out.println("Exam05_5_GrobalControllerAdvice.initBinder()");
+    System.out.println("Exam05_05_GrobalControllerAdvice.initBinder()");
     
     binder.registerCustomEditor(
         java.sql.Date.class,

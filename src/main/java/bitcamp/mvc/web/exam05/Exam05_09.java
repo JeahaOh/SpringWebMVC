@@ -12,8 +12,8 @@ import com.google.gson.GsonBuilder;
 import bitcamp.mvc.vo.Board;
 
 @Controller
-@RequestMapping("/exam05_9")
-public class Exam05_9 {
+@RequestMapping("/exam05_09")
+public class Exam05_09 {
   //    Client로부터 한 통으로 된 값을 받을 때
   //    @RequestBody를 사용한다.
   
