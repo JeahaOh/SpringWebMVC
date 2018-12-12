@@ -1,12 +1,15 @@
 plugins {
     id 'java'
+    id 'eclipse'
     id 'eclipse-wtp'
     id 'war'
 }
 
-JavaCompile {
-    options.encoding = 'UTF-8'
+tasks.withType(JavaCompile) {
+    //enable compilation in a separate daemon process
+    options.fork = true
 }
+
 
 eclipse {
     wtp {
