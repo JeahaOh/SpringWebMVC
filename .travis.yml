@@ -28,7 +28,7 @@ deploy:
     bundle_type: zip
     application: scenecok-webservice # 웹 콘솔에서 등록한 CodeDeploy 어플리케이션
     deployment_group: scenecok-webservice-group # 웹 콘솔에서 등록한 CodeDeploy 배포 그룹
-    region: ap-northeast-2
+    region: ap-northeast-2c
     wait-until-deployed: true
     on:
       repo: JeahaOh/SpringWebMVC #Github 주소
